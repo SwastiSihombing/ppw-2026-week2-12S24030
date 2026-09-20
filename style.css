@@ -1261,18 +1261,18 @@ textarea {
 
 .aside-content .btn-primary {
 
-    background: var(--white-color);
+    background: linear-gradient(110deg, #6956d9 0%, #9d8cff 55%, #35b9d4 100%);
 
     color: #211a42;
 
-    box-shadow: 0 0 18px rgba(85, 230, 255, 0.28);
+    box-shadow: 0 0 18px rgba(85, 230, 255, 0.28), 0 5px 15px rgba(105, 86, 217, 0.35);
 
 }
 
 
 .aside-content .btn-primary:hover {
 
-    background: #cfc5ff;
+    background: linear-gradient(110deg, #5540ba 0%, #7564df 55%, #238ba7 100%);
 
     color: #17112f;
 
