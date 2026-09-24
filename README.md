@@ -5,7 +5,7 @@ Website portofolio akademik **Swasti Maristella Sihombing** yang direfactor dari
 ## Identitas
 
 | Data | Keterangan |
-| --- | --- |
+
 | Nama | Swasti Maristella Sihombing |
 | NIM | 12S24030 |
 | Kelas | Sistem Informasi |
