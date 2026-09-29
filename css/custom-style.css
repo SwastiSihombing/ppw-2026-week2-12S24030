@@ -1604,3 +1604,215 @@ textarea {
     }
 
 }
+
+
+/* =========================================
+   17. DYNAMIC CSR COMPONENTS
+========================================= */
+
+.loading-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 72px;
+    color: var(--text-muted);
+}
+
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.filter-button {
+    padding: 8px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    background: var(--surface-color);
+    color: var(--text-muted);
+    font: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.filter-button:hover,
+.filter-button[aria-pressed="true"] {
+    border-color: var(--primary-color);
+    background: var(--accent-color);
+    color: var(--text-color);
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 18px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-small);
+    background: var(--accent-color);
+    object-fit: cover;
+}
+
+.project-detail-button {
+    align-self: flex-start;
+    margin-top: 18px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 20px;
+}
+
+.service-card,
+.order-summary {
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-medium);
+    background: var(--surface-color);
+    box-shadow: var(--shadow-soft);
+}
+
+.service-card h3,
+.order-summary h3 {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.service-card p,
+.service-features {
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.service-rate {
+    color: var(--glow-cyan) !important;
+    font-weight: 700;
+}
+
+.service-features {
+    padding-left: 20px;
+}
+
+.order-summary {
+    max-width: 800px;
+    margin: 0 auto 22px;
+}
+
+.order-summary h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.order-badge {
+    display: inline-grid;
+    min-width: 28px;
+    height: 28px;
+    place-items: center;
+    padding: 0 7px;
+    border-radius: 999px;
+    background: var(--primary-dark);
+    color: var(--white-color);
+    font-size: 13px;
+}
+
+.order-history-list {
+    display: grid;
+    gap: 7px;
+    padding-left: 22px;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.project-category {
+    display: inline-block;
+    margin: 0 0 18px;
+    padding: 5px 11px;
+    border-radius: 999px;
+    background: var(--accent-color);
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.project-metrics {
+    display: grid;
+    grid-template-columns: minmax(90px, 0.35fr) 1fr;
+    gap: 8px 14px;
+    margin: 0 0 20px;
+}
+
+.project-metrics dt {
+    color: var(--text-muted);
+}
+
+.project-metrics dd {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.modal-content {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-medium);
+    background: var(--surface-color);
+    color: var(--text-color);
+}
+
+.modal-header {
+    border-bottom-color: var(--border-color);
+    background: var(--accent-color);
+}
+
+.modal-body {
+    color: var(--text-color);
+}
+
+.project-modal-image {
+    width: 100%;
+    max-height: 340px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.toast {
+    border: 1px solid var(--border-color);
+    background: var(--surface-color);
+    color: var(--text-color);
+}
+
+.toast .toast-header {
+    background: var(--accent-color);
+    color: var(--text-color);
+}
+
+.toast-warning {
+    border-color: #d97706;
+}
+
+.toast-warning .toast-header {
+    background: #713f12;
+}
+
+@media (max-width: 480px) {
+    .service-card,
+    .order-summary {
+        padding: 20px;
+    }
+
+    .project-metrics {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+    .project-metrics dd {
+        margin-bottom: 8px;
+    }
+}

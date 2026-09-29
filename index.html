@@ -9,6 +9,9 @@
     <meta name="description"
         content="Website portofolio akademik Swasti Sihombing, mahasiswa Sistem Informasi Institut Teknologi Del.">
 
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net data:; img-src 'self' https://images.unsplash.com data:; connect-src 'self' https://jsonplaceholder.typicode.com; base-uri 'self'; object-src 'none'">
+
     <meta name="author" content="Swasti Maristella Sihombing">
 
     <title>Swasti Sihombing | Academic Portfolio</title>
@@ -20,8 +23,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/custom-style.css">
 </head>
 
 <body>
@@ -74,18 +79,14 @@
             <div class="hero-content">
 
                 <p class="hero-label">
-                    INFORMATION SYSTEMS STUDENT
+                    <span id="profile-headline">Memuat profil...</span>
                 </p>
 
                 <h1>
-                    Hello, I'm <span>Swasti Sihombing</span>
+                    Hello, I'm <span id="profile-display-name">...</span>
                 </h1>
 
-                <p class="hero-description">
-                    Mahasiswa Sistem Informasi Institut Teknologi Del
-                    yang memiliki ketertarikan pada pengembangan aplikasi,
-                    pengolahan data, dan desain antarmuka digital.
-                </p>
+                <p class="hero-description" id="profile-summary" aria-live="polite">Memuat data profil...</p>
 
                 <div class="hero-buttons">
 
@@ -103,8 +104,7 @@
 
             <div class="hero-image">
 
-                <img src="assets/profile.jpeg"
-                    alt="Foto profil Swasti Sihombing">
+                <img id="profile-photo" src="assets/profile.jpeg" alt="Foto profil" loading="lazy">
 
             </div>
 
@@ -134,76 +134,8 @@
 
 
             <div class="about-grid">
-
-                <!-- ARTICLE PROFIL -->
-
-                <article class="about-card">
-
-                    <h3>
-                        Profil Akademik
-                    </h3>
-
-                    <div class="profile-information">
-
-                        <p>
-                            <strong>Nama:</strong>
-                            Swasti Maristella Sihombing
-                        </p>
-
-                        <p>
-                            <strong>NIM:</strong>
-                            12S24030
-                        </p>
-
-                        <p>
-                            <strong>Program Studi:</strong>
-                            Sistem Informasi
-                        </p>
-
-                        <p>
-                            <strong>Institusi:</strong>
-                            Institut Teknologi Del
-                        </p>
-
-                        <p>
-                            <strong>Semester:</strong>
-                            4
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- ARTICLE DESKRIPSI -->
-
-                <article class="about-card">
-
-                    <h3>
-                        Tentang Saya
-                    </h3>
-
-                    <p>
-                        Saya merupakan mahasiswa Sistem Informasi yang
-                        tertarik pada pengembangan teknologi digital,
-                        pengolahan data, dan perancangan antarmuka pengguna.
-                    </p>
-
-                    <p>
-                        Saya senang mempelajari hal-hal baru, mengembangkan
-                        kemampuan pemrograman, serta mengerjakan proyek
-                        yang dapat memberikan solusi terhadap permasalahan
-                        di kehidupan sehari-hari.
-                    </p>
-
-                    <p>
-                        Melalui berbagai kegiatan akademik dan proyek,
-                        saya terus mengembangkan kemampuan teknis,
-                        komunikasi, kerja sama tim, dan pemecahan masalah.
-                    </p>
-
-                </article>
-
+                <article class="about-card" id="profile-academic" aria-live="polite"></article>
+                <article class="about-card" id="profile-biography" aria-live="polite"></article>
             </div>
 
         </section>
@@ -233,117 +165,7 @@
 
             <!-- SKILL CARDS -->
 
-            <div class="skills-grid">
-
-                <article class="skill-card">
-
-                    <div class="skill-icon">
-                        HTML
-                    </div>
-
-                    <h3>
-                        HTML5
-                    </h3>
-
-                    <p>
-                        Membuat struktur halaman web menggunakan elemen
-                        HTML semantik.
-                    </p>
-
-                </article>
-
-
-                <article class="skill-card">
-
-                    <div class="skill-icon">
-                        CSS
-                    </div>
-
-                    <h3>
-                        CSS3
-                    </h3>
-
-                    <p>
-                        Mendesain tampilan website menggunakan Flexbox,
-                        Grid, dan responsive design.
-                    </p>
-
-                </article>
-
-
-                <article class="skill-card">
-
-                    <div class="skill-icon">
-                        JAVA
-                    </div>
-
-                    <h3>
-                        Java
-                    </h3>
-
-                    <p>
-                        Mengembangkan program menggunakan konsep dasar
-                        Object-Oriented Programming.
-                    </p>
-
-                </article>
-
-
-                <article class="skill-card">
-
-                    <div class="skill-icon">
-                        SQL
-                    </div>
-
-                    <h3>
-                        SQL
-                    </h3>
-
-                    <p>
-                        Mengelola data dan membuat query untuk kebutuhan
-                        pengolahan database.
-                    </p>
-
-                </article>
-
-
-                <article class="skill-card">
-
-                    <div class="skill-icon">
-                        PY
-                    </div>
-
-                    <h3>
-                        Python
-                    </h3>
-
-                    <p>
-                        Menggunakan Python untuk pengolahan data dan
-                        pengembangan proyek sederhana.
-                    </p>
-
-                </article>
-
-
-                <article class="skill-card">
-
-                    <div class="skill-icon">
-                        UX
-                    </div>
-
-                    <h3>
-                        UI/UX Design
-                    </h3>
-
-                    <p>
-                        Merancang antarmuka dan pengalaman pengguna
-                        menggunakan prinsip desain yang berorientasi
-                        pada kebutuhan pengguna.
-                    </p>
-
-                </article>
-
-            </div>
+            <div class="skills-grid" id="skills-grid" aria-live="polite"></div>
 
 
             <!-- HTML LISTS -->
@@ -356,29 +178,7 @@
                         Teknologi yang Dipelajari
                     </h3>
 
-                    <ul class="custom-list">
-
-                        <li>
-                            HTML5 dan CSS3
-                        </li>
-
-                        <li>
-                            Java dan Object-Oriented Programming
-                        </li>
-
-                        <li>
-                            Python dan Data Analysis
-                        </li>
-
-                        <li>
-                            SQL dan Database
-                        </li>
-
-                        <li>
-                            Git dan GitHub
-                        </li>
-
-                    </ul>
+                    <ul class="custom-list" id="technology-list" aria-live="polite"></ul>
 
                 </article>
 
@@ -442,88 +242,8 @@
             </div>
 
 
-            <!-- PROJECT CARDS -->
-
-            <div class="project-cards">
-
-                <article class="project-card">
-
-                    <span class="project-number">
-                        01
-                    </span>
-
-                    <h3>
-                        SmartCampus
-                    </h3>
-
-                    <p>
-                        Proyek mini berbasis Java yang berfokus pada
-                        penerapan konsep Object-Oriented Programming
-                        untuk pengembangan aplikasi kampus.
-                    </p>
-
-                    <div class="project-tags">
-
-                        <span>Java</span>
-                        <span>OOP</span>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project-card">
-
-                    <span class="project-number">
-                        02
-                    </span>
-
-                    <h3>
-                        UMiKA
-                    </h3>
-
-                    <p>
-                        Perancangan aplikasi digital untuk membantu
-                        UMKM dalam pencatatan transaksi, pengelolaan stok,
-                        promosi, dan akses pendanaan.
-                    </p>
-
-                    <div class="project-tags">
-
-                        <span>UI/UX</span>
-                        <span>Figma</span>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project-card">
-
-                    <span class="project-number">
-                        03
-                    </span>
-
-                    <h3>
-                        KarhutlaFlow
-                    </h3>
-
-                    <p>
-                        Proyek analisis data dan machine learning untuk
-                        memprediksi risiko kebakaran hutan dan lahan
-                        menggunakan data lingkungan dan hotspot.
-                    </p>
-
-                    <div class="project-tags">
-
-                        <span>Python</span>
-                        <span>Machine Learning</span>
-
-                    </div>
-
-                </article>
-
-            </div>
+            <div id="project-filters" class="project-filters" role="group" aria-label="Filter kategori proyek"></div>
+            <div class="project-cards" id="project-cards" aria-live="polite"></div>
 
 
             <!-- SEMANTIC TABLE -->
@@ -566,94 +286,15 @@
                     </thead>
 
 
-                    <tbody>
-
-                        <tr>
-
-                            <th scope="row">
-                                1
-                            </th>
-
-                            <td>
-                                SmartCampus
-                            </td>
-
-                            <td>
-                                Java
-                            </td>
-
-                            <td>
-                                Mini project aplikasi kampus
-                                berbasis OOP.
-                            </td>
-
-                            <td>
-                                Selesai
-                            </td>
-
-                        </tr>
-
-
-                        <tr>
-
-                            <th scope="row">
-                                2
-                            </th>
-
-                            <td>
-                                UMiKA
-                            </td>
-
-                            <td>
-                                UI/UX Design
-                            </td>
-
-                            <td>
-                                Perancangan aplikasi digital
-                                untuk UMKM.
-                            </td>
-
-                            <td>
-                                Selesai
-                            </td>
-
-                        </tr>
-
-
-                        <tr>
-
-                            <th scope="row">
-                                3
-                            </th>
-
-                            <td>
-                                KarhutlaFlow
-                            </td>
-
-                            <td>
-                                Python dan Machine Learning
-                            </td>
-
-                            <td>
-                                Prediksi risiko kebakaran hutan
-                                dan lahan.
-                            </td>
-
-                            <td>
-                                Pengembangan
-                            </td>
-
-                        </tr>
-
-                    </tbody>
+                    <tbody id="project-table-body"></tbody>
 
 
                     <tfoot>
 
                         <tr>
 
-                            <td colspan="5">
-                                Total proyek yang ditampilkan: 3
+                            <td colspan="5" id="project-total">
+                                Memuat jumlah proyek...
                             </td>
 
                         </tr>
@@ -664,6 +305,18 @@
 
             </div>
 
+        </section>
+
+
+        <!-- ================= SERVICE SECTION ================= -->
+
+        <section id="services" class="section-container">
+            <div class="section-heading">
+                <p class="section-label">SERVICE CATALOG</p>
+                <h2>Layanan Konsultasi</h2>
+                <p>Paket layanan dan tarif berikut merupakan data simulasi untuk demonstrasi form.</p>
+            </div>
+            <div id="service-list" class="service-list" aria-live="polite"></div>
         </section>
 
 
@@ -689,7 +342,12 @@
             </div>
 
 
-            <form class="contact-form" action="#" method="post">
+            <div class="order-summary" aria-live="polite">
+                <h3>Riwayat Permintaan <span class="order-badge" id="order-count">0</span></h3>
+                <ol id="order-history-list" class="order-history-list"></ol>
+            </div>
+
+            <form id="contact-form" class="contact-form">
 
 
                 <!-- FIELDSET 1 -->
@@ -804,22 +462,6 @@
 
                             <option value="">
                                 -- Pilih jenis layanan --
-                            </option>
-
-                            <option value="frontend">
-                                Frontend Development
-                            </option>
-
-                            <option value="uiux">
-                                UI/UX Design
-                            </option>
-
-                            <option value="data">
-                                Data Analysis
-                            </option>
-
-                            <option value="konsultasi">
-                                Konsultasi Proyek
                             </option>
 
                         </select>
@@ -977,8 +619,7 @@
 
 
                 <p class="form-note">
-                    * Kolom wajib diisi. Formulir ini merupakan
-                    demonstrasi HTML dan CSS.
+                    Pengiriman memakai mock API eksternal; jangan kirim data sensitif. Riwayat demo disimpan di browser ini.
                 </p>
 
             </form>
@@ -1067,13 +708,38 @@
                 All rights reserved.
             </p>
 
-            <p>
-                Built with HTML5 & CSS3
+                <p>
+                    Built with HTML5, CSS3 & JavaScript
             </p>
 
         </div>
 
     </footer>
+
+    <div class="modal fade" id="universalProjectModal" tabindex="-1" aria-labelledby="projectModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="projectModalTitle">Detail proyek</h2>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body" id="projectModalBody"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="orderToast" class="toast" role="status" aria-live="polite" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto" id="orderToastTitle">Permintaan</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Tutup"></button>
+            </div>
+            <div class="toast-body" id="orderToastMessage"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script type="module" src="js/app.js"></script>
 
 </body>
 

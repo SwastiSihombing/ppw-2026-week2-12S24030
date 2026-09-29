@@ -1,0 +1,58 @@
+[
+  {
+    "id": "smartcampus",
+    "title": "SmartCampus",
+    "category": "Aplikasi",
+    "description": "Proyek mini berbasis Java yang berfokus pada penerapan konsep Object-Oriented Programming untuk pengembangan aplikasi kampus.",
+    "tags": ["Java", "OOP"],
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+    "link": "#portfolio",
+    "status": "Selesai",
+    "metrics": [
+      { "label": "Fokus", "value": "Object-Oriented Programming" },
+      { "label": "Teknologi", "value": "Java" }
+    ]
+  },
+  {
+    "id": "umika",
+    "title": "UMiKA",
+    "category": "UI/UX",
+    "description": "Perancangan aplikasi digital untuk membantu UMKM dalam pencatatan transaksi, pengelolaan stok, promosi, dan akses pendanaan.",
+    "tags": ["UI/UX", "Figma"],
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80",
+    "link": "#portfolio",
+    "status": "Selesai",
+    "metrics": [
+      { "label": "Fokus", "value": "Kebutuhan UMKM" },
+      { "label": "Cakupan", "value": "Transaksi, stok, promosi, pendanaan" }
+    ]
+  },
+  {
+    "id": "karhutlaflow",
+    "title": "KarhutlaFlow",
+    "category": "Data",
+    "description": "Proyek analisis data dan machine learning untuk memprediksi risiko kebakaran hutan dan lahan menggunakan data lingkungan dan hotspot.",
+    "tags": ["Python", "Machine Learning"],
+    "image": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
+    "link": "#portfolio",
+    "status": "Pengembangan",
+    "metrics": [
+      { "label": "Fokus", "value": "Prediksi risiko kebakaran" },
+      { "label": "Data", "value": "Lingkungan dan hotspot" }
+    ]
+  },
+  {
+    "id": "academic-portfolio",
+    "title": "Academic Portfolio",
+    "category": "Web",
+    "description": "Website portfolio akademik satu halaman yang menampilkan profil, keahlian, proyek, dan formulir konsultasi.",
+    "tags": ["HTML5", "CSS3", "Responsive Design"],
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
+    "link": "#portfolio",
+    "status": "Selesai",
+    "metrics": [
+      { "label": "Fokus", "value": "Portfolio akademik" },
+      { "label": "Format", "value": "Single-page website" }
+    ]
+  }
+]

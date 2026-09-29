@@ -1,0 +1,23 @@
+[
+  {
+    "id": "frontend",
+    "name": "Frontend Development",
+    "description": "Implementasi antarmuka web responsif berdasarkan kebutuhan proyek.",
+    "rate": "Tarif simulasi: Rp75.000 per sesi",
+    "features": ["Struktur HTML semantik", "Styling CSS responsif", "Interaksi dasar JavaScript"]
+  },
+  {
+    "id": "uiux",
+    "name": "UI/UX Design",
+    "description": "Perancangan alur dan tampilan antarmuka untuk kebutuhan aplikasi digital.",
+    "rate": "Tarif simulasi: Rp75.000 per sesi",
+    "features": ["Diskusi kebutuhan", "Rancangan antarmuka", "Evaluasi pengalaman pengguna"]
+  },
+  {
+    "id": "data",
+    "name": "Data Analysis",
+    "description": "Konsultasi awal untuk pengolahan dan eksplorasi data proyek akademik.",
+    "rate": "Tarif simulasi: Rp100.000 per sesi",
+    "features": ["Pemeriksaan kebutuhan data", "Diskusi metode", "Ringkasan langkah analisis"]
+  }
+]

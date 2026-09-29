@@ -1,0 +1,55 @@
+{
+  "name": "Swasti Maristella Sihombing",
+  "displayName": "Swasti Sihombing",
+  "nim": "12S24030",
+  "programStudy": "Sistem Informasi",
+  "institution": "Institut Teknologi Del",
+  "semester": 4,
+  "headline": "INFORMATION SYSTEMS STUDENT",
+  "summary": "Mahasiswa Sistem Informasi Institut Teknologi Del yang memiliki ketertarikan pada pengembangan aplikasi, pengolahan data, dan desain antarmuka digital.",
+  "biography": [
+    "Saya merupakan mahasiswa Sistem Informasi yang tertarik pada pengembangan teknologi digital, pengolahan data, dan perancangan antarmuka pengguna.",
+    "Saya senang mempelajari hal-hal baru, mengembangkan kemampuan pemrograman, serta mengerjakan proyek yang dapat memberikan solusi terhadap permasalahan di kehidupan sehari-hari.",
+    "Melalui berbagai kegiatan akademik dan proyek, saya terus mengembangkan kemampuan teknis, komunikasi, kerja sama tim, dan pemecahan masalah."
+  ],
+  "photo": "assets/profile.jpeg",
+  "learningTopics": [
+    "HTML5 dan CSS3",
+    "Java dan Object-Oriented Programming",
+    "Python dan Data Analysis",
+    "SQL dan Database",
+    "Git dan GitHub"
+  ],
+  "skills": [
+    {
+      "name": "HTML5",
+      "label": "HTML",
+      "description": "Membuat struktur halaman web menggunakan elemen HTML semantik."
+    },
+    {
+      "name": "CSS3",
+      "label": "CSS",
+      "description": "Mendesain tampilan website menggunakan Flexbox, Grid, dan responsive design."
+    },
+    {
+      "name": "Java",
+      "label": "JAVA",
+      "description": "Mengembangkan program menggunakan konsep dasar Object-Oriented Programming."
+    },
+    {
+      "name": "SQL",
+      "label": "SQL",
+      "description": "Mengelola data dan membuat query untuk kebutuhan pengolahan database."
+    },
+    {
+      "name": "Python",
+      "label": "PY",
+      "description": "Menggunakan Python untuk pengolahan data dan pengembangan proyek sederhana."
+    },
+    {
+      "name": "UI/UX Design",
+      "label": "UX",
+      "description": "Merancang antarmuka dan pengalaman pengguna dengan berorientasi pada kebutuhan pengguna."
+    }
+  ]
+}
