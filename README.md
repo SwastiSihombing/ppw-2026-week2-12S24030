@@ -3,7 +3,7 @@
 Portfolio akademik Swasti Maristella Sihombing yang direfaktor dari halaman statis menjadi aplikasi decoupled multi-tier dengan dynamic Client-Side Rendering (CSR).
 
 - Repository: https://github.com/SwastiSihombing/ppw-2026-week2-12S24030
-- Live deployment: [Portfolio Week 4](https://swastisihombing.github.io/ppw-2026-week2-12S24030/) (saat diperiksa, URL mengembalikan 404 karena GitHub Pages belum diaktifkan)
+- Live deployment: [Portfolio Week 4](https://swastisihombing.github.io/ppw-2026-week2-12S24030/) (saat diperiksa, URL publik mengembalikan 404; status Pages perlu diverifikasi pemilik repo)
 - Branch pekerjaan: `week4-architecture`
 
 ## Arsitektur C4 Container
@@ -104,7 +104,7 @@ Panduan pencatatan: buka DevTools → Network, aktifkan **Disable cache** untuk 
 
 ## Git dan Deployment
 
-Perubahan Week 4 sudah di-commit dan di-push pada branch `week4-architecture`. Pages API saat pemeriksaan mengembalikan 404 dan URL live belum aktif. Pemilik repository perlu membuka Settings → Pages, memilih **Deploy from a branch**, branch `week4-architecture`, folder `/(root)`, lalu Save. Setelah deployment selesai, buka URL live di atas dan pastikan keempat JSON berhasil dimuat.
+Perubahan Week 4 sudah di-commit dan di-push pada branch `week4-architecture`. Saat pemeriksaan tanpa sesi login GitHub, Pages API dan URL publik sama-sama mengembalikan 404; pengaturan Pages serta visibilitas repository belum dapat dipastikan. Pemilik repository perlu login dan membuka Settings → Pages, memilih **Deploy from a branch**, branch `week4-architecture`, folder `/(root)`, lalu Save. Setelah deployment selesai, buka URL live di atas dan pastikan keempat JSON berhasil dimuat.
 
 ## Struktur Project
 
