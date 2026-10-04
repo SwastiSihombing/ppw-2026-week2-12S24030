@@ -1,0 +1,35 @@
+[
+  {
+    "id": "frontend",
+    "name": "Frontend Development",
+    "description": "Pengembangan tampilan website yang modern, responsif, dan mudah digunakan.",
+    "rate": "Mulai dari Rp500.000",
+    "features": [
+      "Landing page",
+      "Portfolio website",
+      "Responsive layout"
+    ]
+  },
+  {
+    "id": "uiux",
+    "name": "UI/UX Design",
+    "description": "Perancangan antarmuka dan pengalaman pengguna untuk produk digital yang lebih intuitif.",
+    "rate": "Mulai dari Rp600.000",
+    "features": [
+      "Wireframe",
+      "User flow",
+      "Design system"
+    ]
+  },
+  {
+    "id": "data",
+    "name": "Data Analysis",
+    "description": "Analisis data sederhana untuk mendukung keputusan bisnis atau kebutuhan akademik.",
+    "rate": "Mulai dari Rp700.000",
+    "features": [
+      "Exploratory data analysis",
+      "Dashboard sederhana",
+      "Visualisasi data"
+    ]
+  }
+]

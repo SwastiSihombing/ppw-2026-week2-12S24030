@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "SmartCampus",
+    "category": "Aplikasi",
+    "description": "Aplikasi kampus berbasis Java yang berfokus pada penerapan konsep Object-Oriented Programming dan pengelolaan data akademik.",
+    "tags": ["Java", "OOP", "Aplikasi"],
+    "image": "assets/project-smartcampus.jpg",
+    "link": "#",
+    "status": "Selesai",
+    "metrics": {
+      "focus": "Pengembangan aplikasi kampus",
+      "technology": "Java",
+      "scope": "Modul utama dan struktur objek"
+    }
+  },
+  {
+    "id": 2,
+    "title": "UMiKA",
+    "category": "UI/UX",
+    "description": "Perancangan aplikasi untuk membantu UMKM dalam pencatatan transaksi, pengelolaan stok, dan promosi produk.",
+    "tags": ["UI/UX", "Figma", "Design"],
+    "image": "assets/project-umika.jpg",
+    "link": "#",
+    "status": "Selesai",
+    "metrics": {
+      "focus": "Perancangan pengalaman pengguna",
+      "technology": "Figma",
+      "scope": "Wireframe dan user flow"
+    }
+  },
+  {
+    "id": 3,
+    "title": "KarhutlaFlow",
+    "category": "Data",
+    "description": "Analisis data dan pemodelan prediksi untuk mendeteksi potensi kebakaran hutan dan lahan menggunakan pendekatan data-driven.",
+    "tags": ["Python", "ML", "Data"],
+    "image": "assets/project-karhutlaflow.jpg",
+    "link": "#",
+    "status": "Pengembangan",
+    "metrics": {
+      "focus": "Prediksi risiko kebakaran",
+      "technology": "Python",
+      "scope": "Analisis data dan model"
+    }
+  }
+]

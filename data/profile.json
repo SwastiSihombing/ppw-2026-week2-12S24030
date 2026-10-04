@@ -1,0 +1,56 @@
+{
+  "name": "Swasti Maristella Sihombing",
+  "displayName": "Swasti Sihombing",
+  "nim": "12S24030",
+  "programStudi": "Sistem Informasi",
+  "institusi": "Institut Teknologi Del",
+  "semester": "4",
+  "headline": "Mahasiswa Sistem Informasi yang tertarik pada pengembangan aplikasi dan teknologi digital.",
+  "summary": "Saya adalah mahasiswa Sistem Informasi Institut Teknologi Del yang tertarik pada pengembangan aplikasi, pengolahan data, dan desain antarmuka digital.",
+  "photo": "assets/profile.jpeg",
+  "biography": [
+    "Saya merupakan mahasiswa Sistem Informasi yang menyukai bidang teknologi, terutama dalam pengembangan aplikasi dan pemecahan masalah berbasis data.",
+    "Saya senang mempelajari teknologi baru, mulai dari HTML, CSS, Java, Python, hingga database dan user interface design.",
+    "Melalui kegiatan belajar dan proyek, saya terus mengembangkan kemampuan teknis serta kemampuan berkomunikasi dan bekerja dalam tim."
+  ],
+  "learningTopics": [
+    "HTML5",
+    "CSS3",
+    "Java",
+    "Python",
+    "SQL",
+    "UI/UX Design"
+  ],
+  "skills": [
+    {
+      "name": "HTML5",
+      "label": "HTML5",
+      "description": "Membuat struktur halaman web yang rapi dan semantik."
+    },
+    {
+      "name": "CSS3",
+      "label": "CSS3",
+      "description": "Mendesain tampilan website agar responsif dan menarik."
+    },
+    {
+      "name": "Java",
+      "label": "Java",
+      "description": "Membangun aplikasi menggunakan konsep OOP dasar."
+    },
+    {
+      "name": "SQL",
+      "label": "SQL",
+      "description": "Mengelola data dan membuat query untuk kebutuhan analisis."
+    },
+    {
+      "name": "Python",
+      "label": "Python",
+      "description": "Mengolah data dan membangun proyek berbasis logika sederhana."
+    },
+    {
+      "name": "UI/UX Design",
+      "label": "UX",
+      "description": "Merancang antarmuka yang mudah digunakan dan nyaman dilihat."
+    }
+  ]
+}
