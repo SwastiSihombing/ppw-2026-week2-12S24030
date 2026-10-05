@@ -91,14 +91,16 @@ Buka `http://localhost:8000/`. Project memerlukan koneksi internet untuk Bootstr
 
 ## Network Profiling
 
-> **Belum diukur:** angka berikut harus diisi dari pengujian Chrome DevTools pada project yang sudah dijalankan. Jangan mengganti placeholder dengan perkiraan. Catat 304 hanya jika status itu benar-benar muncul.
+Nilai berikut ditranskripsikan dari screenshot Network cold dan warm load yang dikirim. Request ekstensi browser ikut terhitung, jadi jumlah transfer dan waktu selesai bukan pengukuran aplikasi saja.
 
-| Skenario | TTFB dokumen | FCP | Total load | Cache-Control | ETag / 304 | Waterfall |
+| Skenario | Request terlihat | Transfer / resources | Selesai / DOMContentLoaded | Status dokumen | TTFB / FCP | Cache-Control / ETag / 304 |
 | --- | --- | --- | --- | --- | --- | --- |
-| Cold load (Disable cache aktif) | Belum diukur | Belum diukur | Belum diukur | Belum dicatat | Belum dicatat | Belum dilampirkan |
-| Warm load (cache aktif, reload) | Belum diukur | Belum diukur | Belum diukur | Belum dicatat | Belum dicatat | Belum dilampirkan |
+| Cold load (Disable cache aktif) | 17 | 7.6 MB / 7.9 MB | 2.04 s / 645 ms | 200 | Belum terlihat pada screenshot | Belum terlihat pada screenshot |
+| Warm load (cache aktif, reload) | 21 | 7.6 MB / 8.3 MB | 2.19 s / 795 ms | Belum terlihat pada screenshot | Belum terlihat pada screenshot | Belum terlihat pada screenshot |
 
-Screenshot Network Waterfall: **belum dilampirkan**. Simpan screenshot hasil DevTools di `screenshots/network-waterfall.png`, lalu tautkan di sini setelah pengujian.
+Catatan: kolom **Selesai / DOMContentLoaded** mengikuti nilai footer Network DevTools. TTFB dapat dilihat melalui request dokumen → **Timing**; FCP dapat dicatat dari tab **Performance**. Header `Cache-Control`, `ETag`, dan status `304 Not Modified` hanya boleh dicatat setelah terlihat pada response aktual.
+
+Screenshot Network Waterfall belum ada di working tree branch ini. Tambahkan kembali screenshot ke `assets/screenshots/cold-load2.png` dan `assets/screenshots/warm-load2.png` agar bisa ditampilkan langsung di README.
 
 Panduan pencatatan: buka DevTools → Network, aktifkan **Disable cache** untuk cold load, reload dan catat baris dokumen/JSON serta timing; nonaktifkan **Disable cache** untuk warm load dan reload kembali. Catat FCP dari Performance atau metrik browser yang tersedia. Header cache dan 304 bergantung pada respons server/CDN; GitHub Pages atau mock endpoint mungkin tidak mengirim 304 pada setiap konfigurasi.
 
